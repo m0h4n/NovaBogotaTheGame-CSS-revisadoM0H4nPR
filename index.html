@@ -27,16 +27,39 @@ style.css"
       defer
     ></script>
   </head>
-<h1>NOVA BOGOTÁ</h1>
-    <button> <a href="Extra 1.html"> CONOCE TU HOGAR </button>
-  <button> <a href="Interacción 1.html"> JUGAR </button>
-  <button><a href="Tutorial.html">TUTORIAL
-    (Canta una canción) </button>
-     </head>
 
   <body>
+    <h1>NOVA BOGOTÁ</h1>
+    <!-- <button> <a href="Extra 1.html"> CONOCE TU HOGAR </button> -->
+    <!-- aquí había un problema mezclando la etiqueta <button>
+    con la etiqueta <a>, además faltaba cerrar correctamente
+    la etiqueta <a>. Esto generaba errores en HTML.
+
+    Lo corregí usando únicamente la etiqueta button
+    con el atributo onclick, como en el ejemplo trabajado en clase. -->
+
+    <button onclick="window.location.href = 'Extra 1.html'">
+      CONOCE TU HOGAR
+    </button>
+
+    <!-- <button> <a href="Interacción 1.html"> JUGAR </button>
+  <button><a href="Tutorial.html">TUTORIAL
+    (Canta una canción) </button>
     <img src="assets/images/home.jpeg" alt="" />
-  <button> <a href="CRÉDITOS.html"> Créditos </button>
+  <button> <a href="CRÉDITOS.html"> Créditos </button> -->
+
+    <!-- hice lo mismo con los otros botones, eliminé la etiqueta <a> y usé únicamente la etiqueta <button> con el atributo onclick para redireccionar a las páginas correspondientes. Además, mantuve la imagen principal dentro del body para conservar la estructura visual de la página. -->
+
+    <button onclick="window.location.href = 'Interacción 1.html'">JUGAR</button>
+
+    <button onclick="window.location.href = 'Tutorial.html'">
+      TUTORIAL (Canta una canción)
+    </button>
+
+    <img src="assets/images/home.jpeg" alt="" />
+
+    <button onclick="window.location.href = 'CRÉDITOS.html'">Créditos</button>
+
     <!-- comentario de actualización prueba 12-05-2026 -->
   </body>
 </html>
